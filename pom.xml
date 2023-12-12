@@ -6,7 +6,7 @@
 
     <groupId>org.krews.plugin.nitro</groupId>
     <artifactId>NitroWebsockets</artifactId>
-    <version>3.1</version>
+    <version>3.2-ICEHOTEL</version>
     <build>
         <plugins>
             <plugin>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.eu.habbo</groupId>
             <artifactId>Habbo</artifactId>
-            <version>3.0.0</version>
+            <version>3.5.3</version>
         </dependency>
     </dependencies>
 </project>

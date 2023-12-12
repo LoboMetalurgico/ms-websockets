@@ -28,6 +28,8 @@ public class CustomHTTPHandler extends ChannelInboundHandlerAdapter {
     }
 
     public boolean handleHttpRequest(ChannelHandlerContext ctx, HttpMessage req) {
+        // FIXME: This verification is completely broken, and will always return false.
+        /*
         String origin = "error";
 
         try {
@@ -41,7 +43,7 @@ public class CustomHTTPHandler extends ChannelInboundHandlerAdapter {
             ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
             return false;
         }
-
+         */
         String header = Emulator.getConfig().getValue("ws.nitro.ip.header", "");
 
         if(!header.isEmpty() && req.headers().contains(header)) {
